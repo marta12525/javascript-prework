@@ -3,13 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
-	</div>
+	<header class="splash">
+		<div class="container">
+			<img class="main-pic" src="https://i.imgur.com/q0lqnpZ.png">
+			<a href='#instr-side' class="main-arrow"><i class="far fa-arrow-alt-circle-down"></i></a>
+		</div>
+	</header>
+	<section class="instruction" id="instr-side">
+		<div class="container">
+			<img class="instr-pic" src="https://i.imgur.com/PWE8Sty.jpg">
+		</div>
+	</section>
+	<section class="game">
+		<div class="container">
+			<div id="buttons">
+				<button id="play-rock">Rock</button>
+				<button id="play-paper">Paper</button>
+				<button id="play-scissors">Scissors</button>
+			</div>
+			<div id="messages"></div>
+		</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
