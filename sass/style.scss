@@ -1,0 +1,90 @@
+// Variables
+
+$font-main: 'Quando', serif;
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;;
+}
+
+// Splash
+
+.splash {
+    background: #940202;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+img.main-pic {
+    justify-content: center;
+    margin: auto;
+}
+
+a.main-arrow {
+    justify-content: center;
+    margin: auto;
+}
+
+a.main-arrow:link, a.main-arrow:hover, a.main-arrow:visited {
+    color: #181616;
+}
+    
+i {
+    font-size: 120px;
+}
+
+// Instruction
+
+img.instr-pic {
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+// Game
+
+.game {
+    background: #32456B;
+    height: 100vh;
+}
+
+div#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+button {
+    color: #25334f;
+    font-size: 50px;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #6b3245;
+    border-radius: 40px;
+    background: #6b3245;
+    opacity: 0.9;
+    cursor: pointer;
+    font-family: monospace;
+    height: 120px;
+    width: 300px;
+}
+
+#messages {
+    text-align: center;
+    color: #4b1e2c;
+    font-size: 60px;
+    font-family: $font-main;
+    margin-top: 100px;
+    line-height: 85px;
+}
