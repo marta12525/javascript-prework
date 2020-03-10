@@ -1,41 +1,19 @@
 function playGame(playerInput){
     clearMessages();
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-    console.log('Wylosowana liczba to: ' + randomNumber);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     let computerMove = getMoveName(randomNumber);
-    /*
-    if(randomNumber == 1){
-        computerMove = 'rock';
-    } else if(randomNumber == 2) {
-        computerMove = 'paper';
-    } else if(randomNumber == 3) {
-        computerMove = 'scissors';
-    }
-    */
-    printMessage('Mój ruch to: ' + computerMove);
 
-    // let playerInput = prompt('Wybierz swój ruch! 1: rock, 2: paper, 3: scissors.');
-
-    console.log('Gracz wpisał: ' + playerInput);
+    printMessage('My move is ' + computerMove);
 
     let playerMove = getMoveName(playerInput);
-    /*
-    if(playerInput == '1'){
-        playerMove = 'rock';
-    } else if(playerInput == '2') {
-        playerMove = 'paper';
-    } else if(playerInput == '3') {
-        playerMove = 'scissors';
-    }
-    */
-    printMessage('Twój ruch to: ' + playerMove);
 
-    let gameScore = displayResult(computerMove, playerMove);
+    printMessage('and your is ' + playerMove);
 
-    printMessage('a więc... ' + gameScore);
+    const gameScore = displayResult(computerMove, playerMove);
+
+    printMessage('sooo... ' + gameScore);
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
