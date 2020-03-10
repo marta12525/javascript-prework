@@ -9,11 +9,11 @@ function clearMessages(){
 }
 
 function getMoveName(argMoveId){
-    if(argMoveId == 1){
+    if (argMoveId == 1) {
       return 'rock';
-    } else if(argMoveId == 2){
+    } else if (argMoveId == 2) {
         return 'paper';
-    } else if(argMoveId == 3){
+    } else if (argMoveId == 3) {
         return 'scissors';
     } else {
       printMessage('Nie znam ruchu o id ' + argMoveId + '.');
@@ -22,29 +22,29 @@ function getMoveName(argMoveId){
   }
 
   function displayResult(argComputerMove, argPlayerMove) {
-	if(argComputerMove == 'rock' && argPlayerMove == 'paper') {
+	if (argComputerMove == 'rock' && argPlayerMove == 'paper') {
         return 'You win!';
-    } else if(argComputerMove == 'rock' && argPlayerMove == 'scissors') {
+    } else if (argComputerMove == 'rock' && argPlayerMove == 'scissors') {
         return 'You lose!';
-    } else if(argComputerMove == 'rock' && argPlayerMove == 'rock') {
-        return 'Remis!';
-    } else if(argComputerMove == 'paper' && argPlayerMove == 'paper') {
-        return 'Remis!';
-    } else if(argComputerMove == 'paper' && argPlayerMove == 'scissors') {
+    } else if (argComputerMove == 'rock' && argPlayerMove == 'rock') {
+        return 'it&apos;s a draw!';
+    } else if (argComputerMove == 'paper' && argPlayerMove == 'paper') {
+        return 'it&apos;s a draw!';
+    } else if (argComputerMove == 'paper' && argPlayerMove == 'scissors') {
         return 'You win!';
-    } else if(argComputerMove == 'paper' && argPlayerMove == 'rock') {
+    } else if (argComputerMove == 'paper' && argPlayerMove == 'rock') {
         return 'You lose!';
-    } else if(argComputerMove == 'scissors' && argPlayerMove == 'paper') {
+    } else if (argComputerMove == 'scissors' && argPlayerMove == 'paper') {
         return 'You lose!';
-    } else if(argComputerMove == 'scissors' && argPlayerMove == 'scissors') {
-        return 'Remis!';
-    } else if(argComputerMove == 'scissors' && argPlayerMove == 'rock') {
+    } else if (argComputerMove == 'scissors' && argPlayerMove == 'scissors') {
+        return 'it&apos;s a draw!';
+    } else if (argComputerMove == 'scissors' && argPlayerMove == 'rock') {
         return 'You win!';
-    } else if(argComputerMove == 'rock' && argPlayerMove == 'nieznany ruch') {
+    } else if (argComputerMove == 'rock' && argPlayerMove == 'nieznany ruch') {
         return 'Try again!';
-    } else if(argComputerMove == 'paper' && argPlayerMove == 'nieznany ruch') {
+    } else if (argComputerMove == 'paper' && argPlayerMove == 'nieznany ruch') {
         return 'Try again!';
-    } else if(argComputerMove == 'scissors' && argPlayerMove == 'nieznany ruch') {
+    } else if (argComputerMove == 'scissors' && argPlayerMove == 'nieznany ruch') {
         return 'Try again!';
     }
 }
