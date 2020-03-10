@@ -1,13 +1,14 @@
-function playGame(playerInput){
+{
+const playGame = function(playerInput){
     clearMessages();
 
     const randomNumber = Math.floor(Math.random() * 3 + 1);
 
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
     printMessage('My move is ' + computerMove);
 
-    let playerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
 
     printMessage('and your is ' + playerMove);
 
@@ -27,3 +28,4 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
     playGame(3);
 });
+}
